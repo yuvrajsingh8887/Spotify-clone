@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    /* background-color: lightblue; */
+    /* border: 2px solid orange; */
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    height: 65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+
+}
+
+
+.navlogo {
+    width: 100px;
+    margin-bottom: 10px;
+
+}
+
+.logo {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png);
+    background-size: cover;
+    height: 73px;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.fav {
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+p.icon {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.nav p {
+    margin-left: 70px;
+}
+
+.fa-regular {
+    font-size: 2rem;
+}
+
+.left {
+    float: right;
+    display: flex;
+    position: absolute;
+    right: 2px;
+}
+
+.bar {
+    background-color:black;
+}
+
+.noti {
+    margin: auto 10px;
+    margin-left: 30px;
+}
+
+#search-bar {
+    align-items: center;
+    margin: auto 2px;
+}
+
+.input {
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.pic {
+    margin: auto 70px;
+    font-size: 3rem;
+}
+
+
+
+
+
+/* main */
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#content {
+    height: 100%;
+    display: flex;
+}
+
+#left {
+    float: left;
+    width: 70%;
+    background: black;
+    /* border: 2px solid white; */
+    height: 200vh;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+
+
+
+.bigbox {
+    display: flex;
+    margin-top: 50px;
+    margin: 10px;
+
+}
+
+.bigbox img {
+    margin: 5px;
+    height: 18rem;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    width: 70vw;
+    /* margin: 5px auto; */
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 280px 280px;
+    grid-auto-rows: 120px;
+}
+
+section div {
+    display: flex;
+    border-radius: 5px;
+    position: relative;
+    width: 320px;
+    height: 130px;
+}
+
+section div img {
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+    transition: 200ms;
+}
+
+section div i {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 5;
+    transform: scale(0);
+    transition: 300ms;
+}
+
+section div img:hover {
+    opacity: 0.3;
+    filter: grayscale(80%);
+}
+
+section div img:hover+i {
+    transform: scale(3.5);
+}
+
+/* section .smallbox div {
+    width: 50%;
+    display: flex;
+} */
+
+.smallbox{
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+flex-wrap: wrap;
+height: auto;
+width: 100%;
+gap: 30px;
+}
+.mbox1{
+    background-color: black;
+height: 130px;
+width: 359px;
+border: 4px solid black;
+margin-left: 15px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.mbox2{
+    background-color: black;
+height: 130px;
+width: 369px;
+border: 4px solid black;
+margin-left: 8px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.mbox3{
+    display: flex;
+    background-color: black;
+    height: 130px;
+    width: 359px;
+    border: 4px solid black;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mbox4{
+    display: flex;
+background-color: black;
+height: 130px;
+width: 452px;
+border: 4px solid black;
+margin-left: 45px;
+margin-top: -205px;
+margin-bottom: 10px;
+}
+.mbox5{
+    display: flex;
+background-color: red;
+height: 130px;
+width: 452px;
+border: 4px solid black;
+margin-left: 23px;
+margin-top: -258px;
+}
+.mbox6{
+    display: flex;
+background-color: red;
+height: 130px;
+width: 452px;
+border: 4px solid black;
+margin-left: 45px;
+margin-top: -258px;
+margin-bottom: 10px;
+}
+.inner{
+    height: 133px;
+    width: 133px;
+}
+.ad1 {
+    font-size: 1.5rem;
+    margin-top: 33px;
+    margin-left: 9px;
+    height: 29px;
+    text-align: center;
+    color: white;
+
+}
+
+.ad2 {
+    font-size: 1.5rem;
+    margin-top: 62px;
+    margin-left: -82px;
+    height: 34px;
+    text-align: center;
+    color: white;
+    width: 162px;
+}
+
+.music{
+    height: 60px;
+    width: 60px;
+
+}
+.dot{
+    font-size: 2.5rem;
+margin-top: 12px;
+margin-left: 9px;
+height: 26px;
+text-align: center;
+color: white;
+width: 92px;
+}
+.time{
+    font-size: 1.1rem;
+margin-top: 56px;
+margin-left: -58px;
+height: 34px;
+text-align: center;
+color: white;
+width: 106px;
+}
+
+
+
+/* .snav {
+    display: flex;
+} */
+
+
+
+.wrapper{
+    height: 220px;
+    /* border: 1px solid white; */
+    display: flex;
+    overflow-x: auto;
+    background-color: rgb(37, 35, 35);
+}
+
+.wrapper.item{
+   min-width: 210px;
+    height: 250px;
+    line-height: 110px;
+    text-align: center;
+    background-color: red;
+    border-radius: 50%;
+}
+.item img{
+    height: 150px;
+}
+
+.wrapper h5{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
+
+.wrapper2{
+    height: 220px;
+    /* border: 1px solid white; */
+    display: flex;
+    overflow-x: auto;
+    background-color: rgb(37, 35, 35);
+}
+
+.wrapper2.item{
+    min-width: 110px;
+     height: 100px;
+     line-height: 110px;
+     text-align: center;
+     background-color: red;
+     border-radius: 50%;
+ }
+ .items img{
+     height: 120px;
+ }
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* right portion */
+
+#right {
+    float: left;
+    width: 30%;
+    /* background: rgb(190, 185, 185);
+    border: 2px solid white; */
+    height: 200vh;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 0.5em;
+    background-color: black;
+}
+
+.headin {
+    /* border: 1px solid white; */
+    /* background-color: green; */
+    height: 50px;
+    margin: auto 5px;
+    padding: auto 10px;
+}
+
+.a {
+    float: left;
+    font-size: 2rem;
+    color: white;
+}
+
+.b {
+    float: right;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: aqua;
+}
+
+.cont {
+    display: flex;
+    height: 100px;
+    width: 30vw;
+    /* background-color: red; */
+    text-align: center;
+    margin: 10px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+}
+
+.cont p.no {
+    margin-top: 42px;
+    margin-right: 17px;
+    height: 44px;
+    text-align: center;
+    color: white;
+}
+
+.mai {
+    width: 130px;
+    height: 40px;
+    color: white;
+}
+
+.para {
+    margin-top: 50px;
+    margin-left: -105px;
+    height: 44px;
+    text-align: center;
+    color: white;
+}
+
+.cont h2 {
+    margin-top: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.heart {
+    margin-top: 37px;
+    margin-left: 126px;
+    height: 24px;
+    width: 37px;
+}

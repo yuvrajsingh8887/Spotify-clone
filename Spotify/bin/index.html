@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* CSS styles for the Spotify clone */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #1DB954;
+    padding: 20px;
+    color: #FFF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navigation elements -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured">
+            <!-- Featured playlists or albums -->
+        </section>
+
+        <section id="songs">
+            <!-- List of songs -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+    <script>
+        // JavaScript code for the Spotify clone
+
+// Example JavaScript functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Perform actions when the page has loaded
+
+    // Example: Fetch and display featured playlists or albums
+    fetch('https://api.spotify.com/v1/featured-playlists')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            var featuredSection = document.getElementById('featured');
+            var playlists = data.items;
+            playlists.forEach(function(playlist) {
+                var playlistElement = document.createElement('div');
+                playlistElement.textContent = playlist.name;
+                featuredSection.appendChild(playlistElement);
+            });
+        })
+        .catch(function(error) {
+            console.log('Error fetching featured playlists:', error);
+        });
+});
+
+    </script>
+
+</body>
+</html>
